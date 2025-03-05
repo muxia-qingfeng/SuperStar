@@ -24,4 +24,4 @@ jobs:
           
       
       - name: Run main.py
-        run: python main.py -u 学习通账号 -18854312550 学习通密码 -ZHL质量004... #课程id 116858463，
+        run: python main.py -u 学习通账号 -18854312550 学习通密码 -ZHLzhl2004... #课程id 116858463，
