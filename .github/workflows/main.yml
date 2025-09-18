@@ -1,28 +1,28 @@
-name: 刷课
+姓名: 刷课
  
-on: 
-  push:
-    branches: [ main ]
-  #是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
-  schedule:
-  //- cron: "0 8 * * *" 
+在……之上: 
+推:
+分支机构: [分支：[主要的]]
+#是否开始每天8点定时刷课，若要开启请把下面两行注释去掉#是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
+计划表:
+//-cron: "0 8 * * *"//-cron："08***"
     
-jobs: 
-  Start:
-    runs-on: ubuntu-latest # 在最新版本的 Ubuntu 操作系统环境下运行
-    steps: # 要执行的步骤
-      - name: 拷贝代码
-        uses: actions/checkout@v3  # 用于将github代码仓库的代码拷贝到工作目录中
+工作: 
+开始:
+run-on: Ubuntu-最新#在最新版本的乌本图操作系统环境下运行ubuntu-lastest#在最新版本的乌本图操作系统环境下运行#在最新版本的乌本图操作系统环境下运行
+步骤: # 要执行的步骤
+      - 姓名: 拷贝代码
+uses: 操作/签出@v3#用于将GitHub代码仓库的代码拷贝到工作目录中action/checkout@v3#用于将GitHub代码仓库的代码拷贝到工作目录中#用于将GitHub代码仓库的代码拷贝到工作目录中
  
-      - name: 设置python环境
-        uses: actions/setup-python@v2 # 用于设置 Python 环境，它允许你指定要在工作环境中使用的 Python 版本
-        with:
-          python-version: '3.9'  # 选择要用的Python版本
+      - 姓名: 设置python环境
+uses: 操作/setup-python@v2#用于设置python环境，它允许你指定要在工作环境中使用的python版本actions/setup-python@v2#用于设置python环境，它允许你指定要在工作环境中使用的python版本#用于设置python环境，它允许你指定要在工作环境中使用的python版本
+和……一起:
+Python版: '3.9'Python版本：#选择要用的python版本#选择要用的python版本#选择要用的python版本
  
-      - name: 安装依赖包
-        run: | # 安装依赖包
-          pip install -r ./requirements.txt 
+      - 姓名: 安装依赖包
+跑: |# 安装依赖包
+管道安装-r./requirements.txt
           
       
-      - name: Run main.py
-        run: python main.py -u 18854312550 -p ZHLzhl2004... -l 116858441  #课程id，默认为心理课的
+      - 姓名: 运行main.py
+跑: Python main。py-u 18854312550-p ZHLzhl2004... -l116858441#课程id，默认为心理课的Python main。py-u 18854312550-p ZHLzhl2004... -l116858441#课程id，默认为心理课的#课程id，默认为心理课的
